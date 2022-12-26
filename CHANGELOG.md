@@ -1,12 +1,18 @@
 Changelog
 =========
 
+1.0.15
+------
+
+- Ruby 3.2 support
+- Redmine 5.0 is required. Use git tag 1.0.14, if you use an older version.
+
 1.0.14
 ------
 
 - Fix i18n bug: switch back to used language after sending message
 - Ruby 2.7 or higher is required. Maintained ruby versions are supported only, see <https://www.ruby-lang.org/en/downloads/>
-- Redmine 4.2 is required. Use git tag 1.0.15, if you use an older version.
+- Redmine 4.2 is required. Use git tag 1.0.13, if you use an older version.
 
 1.0.13
 ------

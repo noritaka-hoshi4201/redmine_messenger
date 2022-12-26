@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module RedmineMessenger
-  VERSION = '1.0.14'
+  VERSION = '1.0.15'
   REDMINE_CONTACTS_SUPPORT = Redmine::Plugin.installed? 'redmine_contacts'
   REDMINE_DB_SUPPORT = Redmine::Plugin.installed? 'redmine_db'
 
