@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    name: ${{ matrix.redmine }} ruby-${{ matrix.ruby }}
+    name: ${{ matrix.redmine }} ${{ matrix.db }} ruby-${{ matrix.ruby }}
     runs-on: ubuntu-latest
 
     strategy:
