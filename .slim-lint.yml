@@ -32,7 +32,6 @@ linters:
       - Layout/LineLength
       - Naming/FileName
       - Rails/OutputSafety
-      - Style/ConditionalAssignment
       - Style/FrozenStringLiteralComment
       - Style/IdenticalConditionalBranches
       - Style/IfUnlessModifier
