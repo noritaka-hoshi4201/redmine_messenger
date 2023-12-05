@@ -3,7 +3,7 @@
 loader = RedminePluginKit::Loader.new plugin_id: 'redmine_messenger'
 
 Redmine::Plugin.register :redmine_messenger do
-  name 'Redmine Messenger'
+  name 'Messenger'
   author 'AlphaNodes GmbH'
   url 'https://github.com/alphanodes/redmine_messenger'
   author_url 'https://alphanodes.com/'
