@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class MessengerSetting < Rails.version < '7.1' ? ActiveRecord::Base : ApplicationRecord
+class MessengerSetting < (defined?(ApplicationRecord) == 'constant' ? ApplicationRecord : ActiveRecord::Base)
   belongs_to :project
 
   validates :messenger_url, format: { with: URI::DEFAULT_PARSER.make_regexp(%w[http https]), allow_blank: true }
