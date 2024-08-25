@@ -104,3 +104,9 @@ Style/HashTransformValues:
 
 Naming/VariableNumber:
   Enabled: false
+
+# this linter does not work with redirect_to
+Rails/ActionControllerFlashBeforeRender:
+  Enabled: true
+  Exclude:
+    - app/controllers/messenger_settings_controller.rb
