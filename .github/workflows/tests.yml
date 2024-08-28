@@ -16,6 +16,8 @@ jobs:
         redmine: ['5.0-stable', '5.1-stable', 'master']
         db: ['postgres', 'mysql']
         exclude:
+          - ruby: '3.0'
+            redmine: master
           - ruby: '3.2'
             redmine: 5.0-stable
       fail-fast: false
