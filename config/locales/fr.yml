@@ -13,7 +13,6 @@ fr:
   label_messenger_password_updated: "%{project_url} - Mot de passe %{url} mis à jour par *%{user}*"
   label_messenger_project_text_field_info: Laissez ce champ vide pour le système par défaut.
   label_messenger_setting: Paramètres de messagerie
-  label_messenger_settings_default: Choix de l'option
   label_messenger_settings_disabled: Désactivé
   label_messenger_settings_enabled: Activé
   label_messenger_wiki_created: "%{project_url} - Wiki %{url} créé par *%{user}*"

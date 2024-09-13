@@ -13,7 +13,6 @@ en:
   label_messenger_password_updated: "%{project_url} - Password %{url} updated by *%{user}*"
   label_messenger_project_text_field_info: Leave it blank for system default.
   label_messenger_setting: Messenger Settings
-  label_messenger_settings_default: System default
   label_messenger_settings_disabled: Disabled
   label_messenger_settings_enabled: Enabled
   label_messenger_wiki_created: "%{project_url} - Wiki %{url} created by *%{user}*"

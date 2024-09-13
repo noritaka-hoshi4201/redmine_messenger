@@ -13,7 +13,6 @@ nl:
   label_messenger_password_updated: "%{project_url} - Wachtwoord %{url} bijgewerkt door *%{user}*"
   label_messenger_project_text_field_info: Laat leeg voor systeeminstelling.
   label_messenger_setting: Messenger Instellingen
-  label_messenger_settings_default: Systeeminstelling
   label_messenger_settings_disabled: Uitgeschakeld
   label_messenger_settings_enabled: Ingeschakeld
   label_messenger_wiki_created: "%{project_url} - Wiki %{url} aangemaakt door *%{user}*"

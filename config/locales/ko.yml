@@ -13,7 +13,6 @@ ko:
   label_messenger_password_updated: "%{project_url} - *%{user}*님이 암호(%{url})를 수정했습니다."
   label_messenger_project_text_field_info: 시스템 기본값을 사용하려면 빈 값으로 두세요.
   label_messenger_setting: 메신저 설정
-  label_messenger_settings_default: 시스템 기본값
   label_messenger_settings_disabled: 비활성화
   label_messenger_settings_enabled: 활성화
   label_messenger_wiki_created: "%{project_url} - *%{user}*님이 위키(%{url})를 만들었습니다."

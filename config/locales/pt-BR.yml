@@ -13,7 +13,6 @@ pt-BR:
   label_messenger_password_updated: "%{project_url} - Password %{url} updated by *%{user}*"
   label_messenger_project_text_field_info: Deixe em branco para usar o padrão.
   label_messenger_setting: Configurações do Messenger
-  label_messenger_settings_default: Configurações Padrão
   label_messenger_settings_disabled: Desabilitado
   label_messenger_settings_enabled: Habilitado
   label_messenger_wiki_created: "%{project_url} - Wiki %{url} criado por *%{user}*"

@@ -13,7 +13,6 @@ de:
   label_messenger_password_updated: "%{project_url} - Passwort %{url} aktualisiert von *%{user}*"
   label_messenger_project_text_field_info: Leer lassen für Systemstandard.
   label_messenger_setting: Messenger Einstellung
-  label_messenger_settings_default: Standardeinstellung
   label_messenger_settings_disabled: Deaktiviert
   label_messenger_settings_enabled: Aktiviert
   label_messenger_wiki_created: "%{project_url} - Wiki %{url} erstellt von *%{user}*"

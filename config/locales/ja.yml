@@ -13,7 +13,6 @@ ja:
   label_messenger_password_updated: "%{project_url} - Password %{url} updated by *%{user}*"
   label_messenger_project_text_field_info: デフォルトの設定を使う場合空欄にしてください。
   label_messenger_setting: メッセンジャーの設定
-  label_messenger_settings_default: デフォルト
   label_messenger_settings_disabled: 無効
   label_messenger_settings_enabled: 有効
   label_messenger_wiki_created: "%{project_url} - Wiki %{url} が by *%{user}* によって作成されました。"
