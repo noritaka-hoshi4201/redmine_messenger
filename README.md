@@ -107,7 +107,7 @@ Restart Redmine (application server)
 
 ## License
 
-*redmine_lightbox* plugin is developed under the [MIT License](LICENSE).
+*redmine_messenger* plugin is developed under the [MIT License](LICENSE).
 
 ## Redmine Copyright
 
