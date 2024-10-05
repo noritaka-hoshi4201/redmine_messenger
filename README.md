@@ -1,12 +1,10 @@
-Messenger plugin for Redmine
-============================
+# Messenger plugin for Redmine
 
 This plugin posts updates to issues in your Redmine installation to [Slack](https://slack.com/), [Rocket.Chat](https://rocket.chat/), [Discord](https://discordapp.com/) or [Mattermost](https://about.mattermost.com/) channel.
 
 [![Rate at redmine.org](https://img.shields.io/badge/rate%20at-redmine.org-blue.svg?style=fla)](https://www.redmine.org/plugins/redmine_messenger) [![Run Linters](https://github.com/AlphaNodes/redmine_messenger/workflows/Run%20Linters/badge.svg)](https://github.com/AlphaNodes/redmine_messenger/actions?query=workflow%3A%22Run+Linters%22) [![Tests](https://github.com/AlphaNodes/redmine_messenger/actions/workflows/tests.yml/badge.svg)](https://github.com/AlphaNodes/redmine_messenger/actions/workflows/tests.yml)
 
-Features
---------
+## Features
 
 * Post information to messenger channel
   * post issue updates
@@ -22,8 +20,7 @@ Features
 * parent project support (inherit messenger settings from parent project)
 * multiple channel support (define one or more channels to deliver note)
 
-Screenshot
-----------
+## Screenshot
 
 Rocket.Chat output:
 
@@ -49,8 +46,7 @@ Redmine configuration:
 
 * **Post wiki updates:** Generates a notification when a projects Wiki is updated.
 
-Prepare your messenger service
-------------------------------
+## Prepare your messenger service
 
 ### Slack
 
@@ -69,8 +65,7 @@ You have to add /slack after your webhook url.
 
 Go to Rocket.Chat documentation [Incoming WebHook Scripting](https://rocket.chat/docs/administrator-guides/integrations/) for more information to set up Incoming WebHook
 
-Requirements
-------------
+## Requirements
 
 * Redmine version >= 5.0
 * Ruby version >= 2.7.0
@@ -82,8 +77,7 @@ Requirements
 * If you want to use it with Redmine 4.1, use git tag 1.0.13
 * If you want to use it with Redmine 4.2, use git tag 1.0.14
 
-Installation
-------------
+## Installation
 
 Install ``redmine_messenger`` plugin for `Redmine`
 
@@ -101,8 +95,7 @@ Channel to the channel's handle (be careful, this is not the channel's display n
 visible to users, you can find each channel's handle by navigating inside the channel
 and clicking the down-arrow and selecting view info).
 
-Uninstall
----------
+## Uninstall
 
 Uninstall ``redmine_messenger``
 
@@ -112,8 +105,26 @@ Uninstall ``redmine_messenger``
 
 Restart Redmine (application server)
 
-Credits
--------
+## License
+
+*redmine_lightbox* plugin is developed under the [MIT License](LICENSE).
+
+## Redmine Copyright
+
+The redmine_messenger is a plugin extension for Redmine Project Management Software, whose Copyright follows.
+Copyright (C) 2006-  Jean-Philippe Lang
+
+Redmine is a flexible project management web application written using Ruby on Rails framework.
+More details can be found in the doc directory or on the official website <http://www.redmine.org>
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+## Credits
 
 The source code is forked from
 
