@@ -118,17 +118,14 @@ module RedmineMessenger
                 end
               end
             end
-            
             # 通知対象
             targets = ["title", "subject", "description", "assigned_to", "author", "attachment", "comment"]    
-            
-            if (keys-targets).size < keys.size
-              Messenger.speak l(:label_messenger_issue_updated,
-                                project_url: Messenger.project_url_markdown(project),
-                                url: send_messenger_mention_url(project, description),
-                                user: current_journal.user),
-                              channels, url, attachment: attachment, project: project
-            end
+            return if (keys-targets).size >= keys.size
+            Messenger.speak l(:label_messenger_issue_updated,
+                              project_url: Messenger.project_url_markdown(project),
+                              url: send_messenger_mention_url(project, description),
+                              user: current_journal.user),
+                            channels, url, attachment: attachment, project: project
           ensure
             ::I18n.locale = initial_language
           end
