@@ -100,17 +100,35 @@ module RedmineMessenger
             if current_journal.notes.present?
               fields << { title: I18n.t(:label_comment),
                           value: Messenger.markup_format(current_journal.notes),
+                          key: "comment"
                           short: false }
             end
             fields << { title: I18n.t(:field_is_private), short: true } if current_journal.private_notes?
             fields.compact!
             attachment[:fields] = fields if fields.any?
 
-            Messenger.speak l(:label_messenger_issue_updated,
-                              project_url: Messenger.project_url_markdown(project),
-                              url: send_messenger_mention_url(project, description),
-                              user: current_journal.user),
-                            channels, url, attachment: attachment, project: project
+            begin
+              if attachment[:fields].present?
+                keys = attachment[:fields].map do |d| 
+                  if d[:key].present?
+                    d[:key]
+                  else # 不明なら dump する
+                    d.to_s
+                  end
+                end
+              end
+            rescue => err
+              keys = [err.message]
+            end
+            # 通知対象
+            targets = ["title", "subject", "description", "assigned_to", "author", "attachment", "comment"]    
+            if (keys-targets).size < keys.size
+              Messenger.speak l(:label_messenger_issue_updated,
+                                project_url: Messenger.project_url_markdown(project),
+                                url: send_messenger_mention_url(project, description),
+                                user: current_journal.user),
+                              channels, url, attachment: attachment, project: project
+            end
           ensure
             ::I18n.locale = initial_language
           end

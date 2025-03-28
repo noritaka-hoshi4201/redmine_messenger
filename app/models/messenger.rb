@@ -248,7 +248,7 @@ class Messenger
                 '-'
               end
 
-      result = { title: title, value: value }
+      result = { title: title, value: value, key: key }
       result[:short] = true if short
       result
     end
