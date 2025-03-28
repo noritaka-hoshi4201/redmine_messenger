@@ -112,7 +112,8 @@ module RedmineMessenger
               keys = attachment[:fields].map do |d| 
                 if d[:key].present?
                   d[:key]
-                else # 不明なら dump する
+                else
+                  # 不明なら dump する
                   d.to_s
                 end
               end
