@@ -107,6 +107,7 @@ module RedmineMessenger
             fields.compact!
             attachment[:fields] = fields if fields.any?
 
+            keys = []
             if attachment[:fields].present?
               keys = attachment[:fields].map do |d| 
                 if d[:key].present?
@@ -116,8 +117,10 @@ module RedmineMessenger
                 end
               end
             end
+            
             # 通知対象
             targets = ["title", "subject", "description", "assigned_to", "author", "attachment", "comment"]    
+            
             if (keys-targets).size < keys.size
               Messenger.speak l(:label_messenger_issue_updated,
                                 project_url: Messenger.project_url_markdown(project),
