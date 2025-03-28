@@ -100,7 +100,7 @@ module RedmineMessenger
             if current_journal.notes.present?
               fields << { title: I18n.t(:label_comment),
                           value: Messenger.markup_format(current_journal.notes),
-                          key: "comment"
+                          key: "comment",
                           short: false }
             end
             fields << { title: I18n.t(:field_is_private), short: true } if current_journal.private_notes?
