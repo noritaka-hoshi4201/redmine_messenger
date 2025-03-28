@@ -107,18 +107,14 @@ module RedmineMessenger
             fields.compact!
             attachment[:fields] = fields if fields.any?
 
-            begin
-              if attachment[:fields].present?
-                keys = attachment[:fields].map do |d| 
-                  if d[:key].present?
-                    d[:key]
-                  else # 不明なら dump する
-                    d.to_s
-                  end
+            if attachment[:fields].present?
+              keys = attachment[:fields].map do |d| 
+                if d[:key].present?
+                  d[:key]
+                else # 不明なら dump する
+                  d.to_s
                 end
               end
-            rescue => err
-              keys = [err.message]
             end
             # 通知対象
             targets = ["title", "subject", "description", "assigned_to", "author", "attachment", "comment"]    
