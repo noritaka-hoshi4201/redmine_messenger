@@ -14,6 +14,7 @@ class MessengerDeliverJob < ActiveJob::Base
       req = Net::HTTP::Post.new uri
       #req.set_form_data payload: params.to_json
       # for Rocket Chat
+      req.content_type = 'application/json'
       req.body = params.to_json
       Net::HTTP.start uri.hostname, uri.port, http_options do |http|
         response = http.request req
