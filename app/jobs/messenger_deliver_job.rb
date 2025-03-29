@@ -12,7 +12,9 @@ class MessengerDeliverJob < ActiveJob::Base
     http_options[:verify_mode] = OpenSSL::SSL::VERIFY_NONE unless RedmineMessenger.setting? :messenger_verify_ssl
     begin
       req = Net::HTTP::Post.new uri
-      req.set_form_data payload: params.to_json
+      #req.set_form_data payload: params.to_json
+      # for Rocket Chat
+      req.body = params.to_json
       Net::HTTP.start uri.hostname, uri.port, http_options do |http|
         response = http.request req
         Rails.logger.warn response.inspect unless [Net::HTTPSuccess, Net::HTTPRedirection, Net::HTTPOK].include? response
